@@ -1,4 +1,4 @@
-""" Collect PTT comments using Scrapy."""
+""" Collect PTT comments using Scrapy. """
 import os
 import time
 import scrapy

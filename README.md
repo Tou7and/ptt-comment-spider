@@ -1,4 +1,4 @@
-# ptt-comment-spider
+# PTT Comment Spider
 A spider for collecting comments from PTT articles.
 
 用來大量爬取 PTT 上的文章評論.

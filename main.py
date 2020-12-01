@@ -98,12 +98,15 @@ def crawl():
         "comment_path": "data/comments.csv"
     }
     yield runner.crawl(
-        PTTSpider1,
-        board=settings["board"], start_page=settings["start_page"], 
-        n_page=settings["n_page"], outpath=settings["url_path"])
-    yield runner.crawl(PTTSpider2, 
-        url_csv=settings["url_path"], 
-        outpath=settings["comment_path"])
+            PTTSpider1,
+            board=settings["board"],
+            start_page=settings["start_page"],
+            n_page=settings["n_page"],
+            outpath=settings["url_path"])
+    yield runner.crawl(
+            PTTSpider2, 
+            url_csv=settings["url_path"],
+            outpath=settings["comment_path"])
     reactor.stop()
 
 crawl()

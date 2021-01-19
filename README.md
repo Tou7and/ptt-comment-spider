@@ -1,18 +1,25 @@
 # PTT Comment Spider
 A spider for collecting comments from PTT articles.
 
-用來大量爬取 PTT 上的文章評論.
+用來大量爬取 PTT 上的文章及評論。
 
 包含兩隻 scrapy 爬蟲,
 
-一隻根據給定條件 (看板名稱, 看板起始頁, 要爬的頁數) 抓取對應的 URL,
+PTTSpider1: 根據給定條件 (看板名稱, 看板起始頁, 要爬的頁數) 抓取對應的文章 URL 
 
-另一隻則是從 URL 列表抓取對應文章的評論，儲存為 CSV 格式.
+PTTSpider2: 從 URL 列表抓取對應文章的評論，儲存為 CSV 格式 (`egs/stock_0117/`)
+
+PTTArticleSpider: 從給定的文章 URL 爬取文章內容 (`egs/gossip_article`)
 
 # Setup
 pip install Scrapy
 
 # Usage
-1. Open main.py, change your setting in the `crawl` function. 
+```
+cp -r egs/gossip_article egs/your_task
+cd egs/your_task 
+mkdir data
+# edit parse.py
+python parse.py
+```
 
-2. python main.py

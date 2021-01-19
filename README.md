@@ -1,9 +1,9 @@
-# PTT Comment Spider
-A spider for collecting comments from PTT articles.
+# PTT Spiders
+A spiders for collecting articles and comments from PTT kanbans.
 
-用來大量爬取 PTT 上的文章及評論。
+PTT爬蟲，用來大量爬取 PTT 上的文章及評論。
 
-包含兩隻 scrapy 爬蟲,
+目前有三種 scrapy spider。
 
 PTTSpider1: 根據給定條件 (看板名稱, 看板起始頁, 要爬的頁數) 抓取對應的文章 URL 
 

@@ -1,3 +1,6 @@
+# Ignore data
+egs/*/data
+
 # Ignore CSV
 *.csv
 
